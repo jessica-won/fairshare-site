@@ -48,27 +48,11 @@ h4{
   font-size: 25;
 }
 
-.bigfont{
-  font-size: 130;
-    transform: translateY(-90%);
-}
-
-.darkfont{
-  color: #212348 !important;
-}
-
 /*Italics for header*/
 .emphasis{
   font-family:'Playfair Display';
   font-weight: 500;
   font-size: 24px;
-  font-style:italic;
-}
-
-.emphasis2{
-  font-family:'Playfair Display';
-  font-weight: 500;
-  font-size: 36px;
   font-style:italic;
 }
 
@@ -94,7 +78,7 @@ h4{
   border-style: solid;
   border-width: 2px;
   border-radius: 42px;
-  border-color: #2F4F4F;
+  border-color: #8F60A4;
   margin-left:0.5rem;
   margin-right:0.5rem;
 }
@@ -111,20 +95,13 @@ h4{
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }
 
-@media (max-width: 992px) {
-  .nav-button {
-    margin-top:5px;
-    margin-bottom: 5px;
-  }
-}
-
 .nav-item{
   margin-left:20px;
   margin-right:20px;
 }
 
 .dropdown-item:focus{
-  background-color: #FBFBFB;
+  background-color: #F1ECFA;
 }
 
 /*Generic button layout and margins*/
@@ -138,6 +115,7 @@ h4{
   border-style: solid;
   border-width: 2px;
   border-radius: 42px;
+  border-color: #8F60A4;
 }
 
 .button:hover{
@@ -149,35 +127,9 @@ h4{
   cursor: pointer;
 }
 /*Ghost button colours*/
-.btn-g-secondary{
-  background-color: white;
-  color: #2F4F4F !important;
-  border-color: #2F4F4F;
-}
-.btn-g-secondary:hover, .btn-g-secondary:focus {
-  background-color: white;
-  border-color: #658B87 !important;
-  color: #658B87 !important;
-  border-radius: 42px;
-}
-/*Primary button colours*/
-.btn-g-primary{
-  background-color: #2F4F4F;
-  color: white !important;
-  border-color: #2F4F4F;
-}
-
-.btn-g-primary:hover, .btn-g-primary:focus {
-  border-color: #658B87 !important;
-  background-color: #658B87 !important;
-  border-radius: 42px;
-}
-
-/*Ghost button colours*/
 .b-secondary{
   background-color: white;
   color: #8F60A4 !important;
-  border-color: #8F60A4;
 }
 .b-secondary:hover, .b-secondary:focus {
   background-color: white;
@@ -189,7 +141,6 @@ h4{
 .b-primary{
   background-color: #8F60A4;
   color: white !important;
-  border-color: #8F60A4;
 }
 
 .b-primary:hover, .b-primary:focus {
@@ -199,42 +150,6 @@ h4{
 }
 
 /*Background colour for sections*/
-.bg-yellow{
-  background-color: #F9EFE4;
-}
-
-.bg-lightgrey{
-  background-color: #F2F0EF;
-}
-
-.bg-darkgrey{
-  background-color: #d3d3d3;
-}
-
-.bg-offwhite{
-  background-color: #FBFBFB;
-}
-
-.bg-green{
-  background-color: #658B87;
-}
-
-.a-green{
-  color: ffffff;
-}
-
-.a-green:hover{
-  color: ffffff;
-}
-
-.bg-green h3{
-  color:ffffff;
-}
-
-.bg-green h1{
-  color: ffffff;
-}
-
 .bg-lilac{
   background-color: #F1ECFA;
 }
@@ -247,23 +162,12 @@ h4{
   background-color: #212348;
 }
 
-.bg-black{
-  background-color: #18191A;
-}
-
 .bg-beige{
   background-color: #F8F6FA;
 }
 
 /*Home page section heights and padding*/
-#home-g{
-  background-position: right;
-  background-size: cover;
-  height: 100vh;
-  background-color: white;
-}
-
-#home-l{
+#home{
   background-image: url("../img/WomanLaptop.png");
   background-position: right;
   background-size: cover;
@@ -317,10 +221,6 @@ h4{
   height: 100vh;
 }
 
-#signup a{
-  text-decoration: underline;
-}
-
 #login a{
   text-decoration: underline;
 }
@@ -331,11 +231,6 @@ h4{
   background-size: cover;
   height: 70vh;
   background-color: white;
-}
-
-#dashboard2{
-  border-radius: 20px;
-  padding:50px;
 }
 
 /*Generic spacing for padding*/
@@ -371,20 +266,6 @@ h4{
 
 /*Home page CSS*/
 /*Learn features section cards*/
-.featurelearncard-g{
-  width: 100%;
-  height: 150px;
-  background-color: white;
-  border-radius: 10px 10px 0px 0px;
-  border-bottom-style: solid;
-  border-bottom-color: #2F4F4F;
-  border-bottom-width: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #212348;
-}
-
 .featurelearncard{
   width: 100%;
   height: 150px;
@@ -396,21 +277,16 @@ h4{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #212348;
 }
 
 /*Amateur, Beginner, Pro Cards*/
-.plancard, .plancard-g{
+.plancard{
   background-color: white;
   height: 500px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   width: 95%;
-}
-
-.plancard-g:hover{
-  box-shadow: 0 0 0 2px #658B87 !important;
 }
 
 .plancard:hover{
@@ -424,7 +300,6 @@ h4{
 
 .planlist {
   list-style: none;
-  list-style-position: outside;
 }
 .planlist li::before{
   content: "✓";
@@ -461,8 +336,6 @@ h4{
 .card img {
   max-width: 100%;
   max-height: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .card {
@@ -471,19 +344,18 @@ h4{
   border: none;
   border-radius: 10px;
   width: 100%;
-  color: #212348 !important;
 }
 
-.cardhover:hover, .cardhover:focus{
+.cardhover-g:hover, .cardhover-g:focus{
   box-shadow: 0 0 0 2px #8F60A4 !important;
 }
 
 .cardhover2-g:hover, .cardhover2-g:focus{
-  box-shadow: 0 0 0 2px #2F4F4F !important;
+  box-shadow: 0 0 0 2px #8F60A4 !important;
 }
 
-.cardhover-g:hover, .cardhover-g:focus{
-  box-shadow: 0 0 0 2px #658B87 !important;
+.cardhover:hover, .cardhover:focus{
+  box-shadow: 0 0 0 2px #8F60A4 !important;
 }
 
 #currentcoursecarousel a:hover{
@@ -523,27 +395,6 @@ h4{
 }
 
 /*Progress bar for courses page*/
-.progressbar-g{
-  height: 10px;
-  width: 90%;
-  background: linear-gradient(to right, #658B87, #658B87 40%, #eee 40%);
-  border-radius:5px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-/*Empty progress bar for course details*/
-.progressbar2-g{
-  height: 10px;
-  width: 60%;
-  background: linear-gradient(to right, #658B87, #658B87 40%, #eee 40%);
-  border-radius:5px;
-  margin-top: 1.25rem;
-}
-
-/*Progress bar for courses page*/
 .progressbar{
   height: 10px;
   width: 90%;
@@ -572,20 +423,6 @@ h4{
   margin-bottom: 10px;
 }
 
-.u-green{
-  height: 10px;
-  width: 100%;
-  background-color: #658B87;
-  margin-bottom: 10px;
-}
-
-.u-yellow{
-  height: 10px;
-  width: 100%;
-  background-color: #F9EFE4;
-  margin-bottom: 10px;
-}
-
 /*Back button on course details*/
 .backbutton{
     transform: translateX(-50%);
@@ -599,22 +436,6 @@ h4{
 }
 
 .backbutton:hover{
-  background-color: #ECECEC;
-}
-
-.backbutton2{
-    transform: translateX(-50%);
-    transform: translateY(-150%);
-    margin-top: 17vh;
-    padding: 20px;
-    border-radius: 50%;
-    display:flex;
-    align-items: center;
-    float:left;
-    justify-content: center;
-}
-
-.backbutton2:hover{
   background-color: #ECECEC;
 }
 
@@ -664,18 +485,6 @@ h4{
   border-radius: 50%;
 }
 
-.progresscircle-g {
-  width: 28px;
-  height: 28px;
-  margin-top:15px;
-  margin-bottom: 15px;
-  margin-right: 20px;
-  margin-left: 10px;
-  float:left;
-  background: conic-gradient(#658B87 0% 25%, #2F4F4F 25% 100%);
-  border-radius: 50%;
-}
-
 .circle {
   width: 28px;
   height: 28px;
@@ -685,18 +494,6 @@ h4{
   margin-left: 10px;
   float:left;
   background-color:#F1ECFA;
-  border-radius: 50%;
-}
-
-.circle-g {
-  width: 28px;
-  height: 28px;
-  margin-top:15px;
-  margin-bottom: 15px;
-  margin-right: 20px;
-  margin-left: 10px;
-  float:left;
-  background-color:#658B87;
   border-radius: 50%;
 }
 
@@ -728,99 +525,5 @@ h4{
 
   40%, 60% {
     transform: translate3d(4px, 0, 0);
-  }
-}
-
-#leaf{
-    animation:rotation 3s linear infinite alternate;
-  transform-origin:bottom right;
-  transform-box:fill-box;
-}
-@keyframes rotation{
-  from{
-    transform:rotate(0deg);
-  }
-  to{
-    transform:rotate(-10deg);
-  }
-}
-
-#rect1{
-  animation:expand 1s linear infinite alternate;
-transform-origin:bottom;
-transform-box:fill-box;
-}
-#rect2{
-  animation:expand 1s linear infinite alternate;
-transform-origin:bottom;
-transform-box:fill-box;
-}
-#rect3{
-  animation:expand 1s linear infinite alternate;
-transform-origin:bottom;
-transform-box:fill-box;
-}
-#rect4{
-  animation:expand 1s linear infinite alternate;
-transform-origin:bottom;
-transform-box:fill-box;
-}
-
-#arrow{
-    animation:shuffle 1s ease-in-out infinite alternate;
-  transform-origin:bottom left;
-  transform-box:fill-box;
-}
-
-#hair{
-    animation:shuffle 2s ease-in-out infinite alternate;
-  transform-origin:top left;
-  transform-box:fill-box;
-}
-
-#leg{
-    animation:rotation 1s ease-in-out infinite alternate;
-  transform-origin:top left;
-  transform-box:fill-box;
-}
-
-/*#pail{
-    animation:shuffle2 3s linear infinite alternate;
-  transform-origin:top;
-  transform-box:fill-box;
-}*/
-@keyframes shuffle{
-  from{
-    transform:rotate(0deg);
-  }
-  to{
-    transform:rotate(-5deg);
-  }
-}
-
-@keyframes expand{
-  from{
-    transform:scaleY(100%);
-  }
-  to{
-    transform:scaleY(130%);
-  }
-}
-
-@keyframes shuffle2{
-  from{
-    transform:rotate(-5deg);
-  }
-  to{
-    transform:rotate(5deg);
-  }
-}
-
-@keyframes spin{
-  from{
-    transform:rotateY(0deg);
-  }
-  to{
-    transform:rotateY(-20deg);
   }
 }
